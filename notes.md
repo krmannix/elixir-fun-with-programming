@@ -6,6 +6,15 @@
     * Did a small data project with it
     * Interested in exploring as a step into functional programming
 
+* Factorial (Warm up!)
+  * Cover base case (0, 1)
+    * Start with if / else if / else
+    * Talk that `if` is really a macro provided by the `Kernel` [module](https://hexdocs.pm/elixir/Kernel.html)
+      * Function signature is like `if(condition, do: do_block, else: nil)`
+      * Macros are a way to dynamically add code to Elixir applications, used for metaprogramming. Almost like an eval function in javascript?
+    * `else if` is not a thing! So we can nest `if` inside the `else`
+    * We should use a `case` statement, which is similar to a switch statement
+
 * Pow
   * Create tests for base cases, n = 0, n = 1
   * Set pow2 to use a default of y (with `\\`)
@@ -19,3 +28,4 @@
   * Add a test to be type safe against non-integers
     * Talk about the difference between return tuples and bang functions
     * Implement pow! with `ArgumentError`
+    * Return an {:ok, val} tuple

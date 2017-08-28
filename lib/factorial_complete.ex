@@ -1,3 +1,0 @@
-defmodule FactorialComplete do
-
-end

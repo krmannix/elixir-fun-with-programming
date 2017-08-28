@@ -1,4 +1,14 @@
-defmodule PowComplete do
+defmodule PatternMathingComplete do
+
+  @spec factorial(number) :: number
+  def factorial(n), do: factorial2(n)
+
+  defp factorial2(n, y \\ 1) do
+    case n do
+      0 -> y
+      n -> factorial2(n - 1, y * n)
+    end
+  end
 
   @spec pow(number, number) :: number
   def pow(x, n) when is_integer(n), do: {:ok, pow2(x, n)}
@@ -17,4 +27,5 @@ defmodule PowComplete do
   defp pow2(x, n, y) when n < 0, do: pow2(1 / x, -n, y)
   defp pow2(x, n, y) when rem(n, 2) == 0, do: pow2(x * x, div(n, 2), y)
   defp pow2(x, n, y), do: pow2(x * x, div((n - 1), 2), x * y)
+
 end
