@@ -29,3 +29,28 @@
     * Talk about the difference between return tuples and bang functions
     * Implement pow! with `ArgumentError`
     * Return an {:ok, val} tuple
+
+* Math AST
+  * Pattern matching in Maps - at argument level
+  * Allows for cool things such as this basic Math AST
+  * Show basic "trees"
+
+1 + 9 = %{ sum: [1, 9] }
+1 + 9 / 2 = %{ sum: [1, %{ div: [9, 2] }] }
+1 * (8 / 4) + 9 / (2 - 4) =
+%{
+  sum: [
+    %{
+      mul: [
+        1,
+        %{ div: [8, 4] }
+      ]
+    },
+    %{
+      div: [
+        9,
+        %{ sub: [2, 4] }
+      ]
+    }
+  ]
+}

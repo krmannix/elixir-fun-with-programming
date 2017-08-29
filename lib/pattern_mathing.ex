@@ -10,4 +10,11 @@ defmodule PatternMathing do
 
   end
 
+  @type operand :: atoms: :sum, :sub, :mul, :div
+  @type expression :: %{required(operand) => [expression | number, expression | number]}
+  @spec ast(expression) :: number
+  def ast(exp) do
+
+  end
+
 end

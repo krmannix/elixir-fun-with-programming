@@ -30,4 +30,7 @@ elixir fun with programming #1
     * Optional arguments with defaults
     * Unused values
     * Guard classes (`rem`, `<`, `>`)
-1. <Something that uses case classes> (maybe the `dig` function?)
+1. [Math Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
+  * Map Pattern Matching
+  * [Enum](https://hexdocs.pm/elixir/Enum.html) library
+  * `cond` case

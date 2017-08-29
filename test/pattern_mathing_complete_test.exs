@@ -28,4 +28,17 @@ defmodule PatternMathingCompleteTest do
     assert_raise(ArgumentError, "Exponent 2.2 is not an integer", fn -> PatternMathingComplete.pow!(4, 2.2) end)
   end
 
+  test "ast" do
+    assert PatternMathingComplete.ast(%{ sum: [6, 2] }) == 8
+    assert PatternMathingComplete.ast(%{ div: [6, 2] }) == 3.0
+    assert PatternMathingComplete.ast(%{ mul: [6, 2] }) == 12
+    assert PatternMathingComplete.ast(%{ sub: [6, 2] }) == 4
+
+    assert PatternMathingComplete.ast(%{ sum: [6, %{ div: [6, 2] }] }) == 9
+    assert PatternMathingComplete.ast(%{ mul: [6, %{ mul: [4, 5] }] }) == 120
+    assert PatternMathingComplete.ast(%{ sum: [%{ sum: [3, 4] }, %{ sum: [5, 6] }] }) == 18
+
+    assert PatternMathingComplete.ast(%{ sum: [%{mul: [1, %{div: [8, 4]} ] }, %{ div: [9, %{ sub: [2, 4] }] }] }) == -2.5
+  end
+
 end

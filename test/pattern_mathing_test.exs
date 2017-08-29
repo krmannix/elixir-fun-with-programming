@@ -9,4 +9,8 @@ defmodule PatternMathingTest do
 
   end
 
+  test "ast" do
+
+  end
+
 end
