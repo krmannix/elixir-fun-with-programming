@@ -22,15 +22,15 @@ elixir fun with programming #1
 
 ## Pattern Matching examples
 1. [Factorial](https://en.wikipedia.org/wiki/Factorial)
-  * Topics:
-    * Pattern matching with recursion
+  1. Topics:
+    1. Pattern matching with recursion
 1. [Exponentiation by Squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring)
-  * Implemented by the [math library](https://github.com/folz/math/blob/master/lib/math.ex#L116)
-  * Topics:
-    * Optional arguments with defaults
-    * Unused values
-    * Guard classes (`rem`, `<`, `>`)
+  1. Implemented by the [math library](https://github.com/folz/math/blob/master/lib/math.ex#L116)
+  1. Topics:
+    1. Optional arguments with defaults
+    1. Unused values
+    1. Guard classes (`rem`, `<`, `>`)
 1. [Math Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
-  * Map Pattern Matching
-  * [Enum](https://hexdocs.pm/elixir/Enum.html) library
-  * `cond` case
+  1. Map Pattern Matching
+  1. [Enum](https://hexdocs.pm/elixir/Enum.html) library
+  1. `cond` case
