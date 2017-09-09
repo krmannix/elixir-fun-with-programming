@@ -1,6 +1,8 @@
 # elixir-fun-with-programming
 elixir fun with programming #1
 
+Presentation for Fun with Programming series @ [Freebird](https://github.com/getfreebirdinc)
+
 ## Why Elixir?
 
 * Functional language with a syntax similar to Ruby
