@@ -1,9 +1,9 @@
-defmodule Pow.Mixfile do
+defmodule PatternMathing.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :pow,
+      app: :pattern_mathing,
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
